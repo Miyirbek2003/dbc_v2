@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+    />
+    <title>Data Business Controll</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-inner">
+          <div>
+            <div class="logo"><img src="./img/logo.png" alt="Logo" /></div>
+            <ul class="link-items">
+              <li class="item-link" onclick="scrollId('main')">
+                <a class="main active">Главная</a>
+              </li>
+              <li class="item-link" onclick="scrollId('about')">
+                <a class="about">Услуги </a>
+              </li>
+              <li class="item-link" onclick="scrollId('projects')">
+                <a class="projects">Проекты</a>
+              </li>
+              <li class="item-link" onclick="scrollId('feedback')">
+                <a class="feedback">Блоги</a>
+              </li>
+              <li class="item-link" onclick="scrollId('tab-lists')">
+                <a class="tab-lists">О нас</a>
+              </li>
+              <div>
+                <div class="social">
+                  <a href="facebook.com"
+                    ><img src="./img/facebook.svg" alt=""
+                  /></a>
+                  <a href="instagram.com"
+                    ><img src="./img/insta.svg" alt=""
+                  /></a>
+                  <a href="tg.com"><img src="./img/tele.svg" alt="" /></a>
+                </div>
+                <div class="lang"><span>Рус</span>/<span>Uzb</span></div>
+                <div class="pay">
+                  Тип оплаты <img src="./img/card.svg" alt="" />
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class="div2">
+            <div class="social">
+              <a href="facebook.com"><img src="./img/facebook.svg" alt="" /></a>
+              <a href="instagram.com"><img src="./img/insta.svg" alt="" /></a>
+              <a href="tg.com"><img src="./img/tele.svg" alt="" /></a>
+            </div>
+            <div class="lang"><span>Рус</span>/<span>Uzb</span></div>
+            <div class="pay">
+              Тип оплаты <img src="./img/card.svg" alt="" />
+            </div>
+          </div>
+          <div class="burger">
+            <div id="nav-icon1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="main" data-aos="fade-up">
+        <div class="container">
+          <div class="main-inner">
+            <div class="main-title">
+              <h1>Оставьте развитие нам, пока вы занимаетесь c бизнесом</h1>
+              <p>
+                Мы предлагаем комплексный подход в сфере SMM продвижения и
+                разработки эффективных сайтов.
+              </p>
+              <div class="actions">
+                <button>услуги <img src="./img/arrow.svg" alt="" /></button>
+                <button>контакт</button>
+              </div>
+            </div>
+            <div class="main-card">
+              <div class="item">
+                <img src="./img/checj.svg" alt="" />
+                <div class="item-title">
+                  <h2>Смм</h2>
+                  <p>социальное развитие</p>
+                </div>
+                <img src="./img/right.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./img/check_fill.svg" alt="" />
+                <div class="item-title">
+                  <h2>Смм</h2>
+                  <p>социальное развитие</p>
+                </div>
+                <img src="./img/right.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./img/checj.svg" alt="" />
+                <div class="item-title">
+                  <h2>Смм</h2>
+                  <p>социальное развитие</p>
+                </div>
+                <img src="./img/right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="shape3" src="./img/shape3.svg" alt="" />
+      </section>
+      <section id="about" data-aos="fade-up">
+        <div class="container">
+          <div class="about-inner">
+            <img src="./img/hero2.png" alt="" />
+            <div class="hero-title">
+              <div class="side"><span></span> О НАС</div>
+              <h2>в онлайн бизнесе вы чувствуете нехватку?</h2>
+              <p>
+                WebPark - это агентство по разработке сайтов любой сложности и
+                комплексному SMM продвижению в социальных сетях. Наши
+                специалисты имеют успешные кейсы как с местными, так и с
+                зарубежными брендами.
+              </p>
+              <div class="hero-title-btm">
+                <h5>следите нами в социальных сетях</h5>
+                <div class="social-title">
+                  <a href="tg.com"
+                    ><img src="./img//tele2.svg" alt="" />Telegram</a
+                  >
+                  <a href="instagram.com"
+                    ><img src="./img/insta2.svg" alt="" />Instagram</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="services" data-aos="fade-up">
+            <div class="hero-title">
+              <div class="side"><span></span> О НАС</div>
+              <h2>наши услуги</h2>
+              <p>
+                Для удобства мы разделили наши услуги по пакетам во всех
+                направлениях, но за вами так же остаётся возможность собрать
+                свой индивидуальный вариант.
+              </p>
+              <div class="actions">
+                <button>подробнее <img src="./img/arrow.svg" alt="" /></button>
+              </div>
+            </div>
+            <div class="services-card">
+              <div data-aos="flip-left">
+                <img src="./img/smm.png" alt="" />
+                <h3>СММ</h3>
+              </div>
+              <div data-aos="flip-left">
+                <img src="./img/web.png" alt="" />
+                <h3>веб сайты</h3>
+              </div>
+              <div data-aos="flip-left">
+                <img src="./img/design.png" alt="" />
+                <h3>Ui ux дизайн</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" data-aos="fade-up">
+        <div class="container">
+          <div class="prices-inner">
+            <div class="prices-title">
+              <p>
+                Для удобства мы разделили наши услуги по пакетам во всех
+                направлениях, но за вами так же остаётся возможность собрать
+                свой индивидуальный вариант.
+              </p>
+              <h2>
+                Сайты для малого <br />
+                бизнеса
+              </h2>
+            </div>
+            <div class="prices-card">
+              <div data-aos="flip-right">
+                <h3>Лендинг</h3>
+                <p>Одностраничный сайт за 3 дня</p>
+
+                <h2>990.000 от</h2>
+                <p>Премиум детали в подарок</p>
+                <div class="actions">
+                  <button>
+                    подробнее <img src="./img/arrow.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div data-aos="flip-right">
+                <h3>Лендинг</h3>
+                <p>Одностраничный сайт за 3 дня</p>
+
+                <h2>990.000 от</h2>
+                <p>Премиум детали в подарок</p>
+              </div>
+              <div data-aos="flip-right">
+                <h3>Лендинг</h3>
+                <p>Одностраничный сайт за 3 дня</p>
+
+                <h2>990.000 от</h2>
+                <p>Премиум детали в подарок</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" data-aos="fade-up">
+        <div class="container">
+          <div class="projects-inner">
+            <div class="prices-title projects-title">
+              <h2>
+                познакомьтесь с <br />
+                Наши готовые работы
+              </h2>
+              <p>
+                мы помогаем создавать значимые <br />
+                бренды с помощью дизайна
+              </p>
+            </div>
+            <div class="projects-slider">
+              <div class="pr-item">
+                <img src="./img/project1.png" alt="" />
+                <div class="date">
+                  <img src="./img/date.svg" alt="" /> 02.11.2022
+                </div>
+                <p>Лендинг пейдж для фармацевтической фирмы</p>
+                <div class="pr-actions">
+                  <button><img src="./img/right2.svg" alt="" /></button>
+                  <div>
+                    <button><img src="./img/share.svg" alt="" /></button>
+                    <button><img src="./img/likw.svg" alt="" /> 21</button>
+                  </div>
+                </div>
+              </div>
+              <div class="pr-item">
+                <img src="./img/project1.png" alt="" />
+                <div class="date">
+                  <img src="./img/date.svg" alt="" /> 02.11.2022
+                </div>
+                <p>Лендинг пейдж для фармацевтической фирмы</p>
+                <div class="pr-actions">
+                  <button><img src="./img/right2.svg" alt="" /></button>
+                  <div>
+                    <button><img src="./img/share.svg" alt="" /></button>
+                    <button><img src="./img/likw.svg" alt="" /> 21</button>
+                  </div>
+                </div>
+              </div>
+              <div class="pr-item">
+                <img src="./img/project1.png" alt="" />
+                <div class="date">
+                  <img src="./img/date.svg" alt="" /> 02.11.2022
+                </div>
+                <p>Лендинг пейдж для фармацевтической фирмы</p>
+                <div class="pr-actions">
+                  <button><img src="./img/right2.svg" alt="" /></button>
+                  <div>
+                    <button><img src="./img/share.svg" alt="" /></button>
+                    <button><img src="./img/likw.svg" alt="" /> 21</button>
+                  </div>
+                </div>
+              </div>
+              <div class="pr-item">
+                <img src="./img/project1.png" alt="" />
+                <div class="date">
+                  <img src="./img/date.svg" alt="" /> 02.11.2022
+                </div>
+                <p>Лендинг пейдж для фармацевтической фирмы</p>
+                <div class="pr-actions">
+                  <button><img src="./img/right2.svg" alt="" /></button>
+                  <div>
+                    <button><img src="./img/share.svg" alt="" /></button>
+                    <button><img src="./img/likw.svg" alt="" /> 21</button>
+                  </div>
+                </div>
+              </div>
+              <div class="pr-item">
+                <img src="./img/project1.png" alt="" />
+                <div class="date">
+                  <img src="./img/date.svg" alt="" /> 02.11.2022
+                </div>
+                <p>Лендинг пейдж для фармацевтической фирмы</p>
+                <div class="pr-actions">
+                  <button><img src="./img/right2.svg" alt="" /></button>
+                  <div>
+                    <button><img src="./img/share.svg" alt="" /></button>
+                    <button><img src="./img/likw.svg" alt="" /> 21</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="feedback" data-aos="fade-up">
+        <div class="container">
+          <div class="feedback-title">
+            <h2>
+              отзывы наших <br />
+              клиентов о нас
+            </h2>
+          </div>
+          <div class="feed-cards">
+            <div class="feed-item">
+              <p>
+                G‘ani g‘ildireni g‘izillatib g‘ildiratti. g‘ildireni g‘izillatib
+                g‘ildiratti. G‘ani g‘ildireni g‘ildiratti.
+              </p>
+              <div>
+                <h3>Abdug‘ani</h3>
+                <p>Turizm</p>
+              </div>
+              <div class="point">
+                <img src="./img/tirnaq.svg" alt="" />
+              </div>
+            </div>
+            <div class="feed-item">
+              <p>
+                G‘ani g‘ildireni g‘izillatib g‘ildiratti. g‘ildireni g‘izillatib
+                g‘ildiratti. G‘ani g‘ildireni g‘ildiratti.
+              </p>
+              <div>
+                <h3>Abdug‘ani</h3>
+                <p>Turizm</p>
+              </div>
+              <div class="point">
+                <img src="./img/tirnaq.svg" alt="" />
+              </div>
+            </div>
+            <div class="feed-item">
+              <p>
+                G‘ani g‘ildireni g‘izillatib g‘ildiratti. g‘ildireni g‘izillatib
+                g‘ildiratti. G‘ani g‘ildireni g‘ildiratti.
+              </p>
+              <div>
+                <h3>Abdug‘ani</h3>
+                <p>Turizm</p>
+              </div>
+              <div class="point">
+                <img src="./img/tirnaq.svg" alt="" />
+              </div>
+            </div>
+            <div class="feed-item">
+              <p>
+                G‘ani g‘ildireni g‘izillatib g‘ildiratti. g‘ildireni g‘izillatib
+                g‘ildiratti. G‘ani g‘ildireni g‘ildiratti.
+              </p>
+              <div>
+                <h3>Abdug‘ani</h3>
+                <p>Turizm</p>
+              </div>
+              <div class="point">
+                <img src="./img/tirnaq.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-lists" data-aos="fade-up">
+        <div class="container">
+          <div class="tab">
+            <div class="vertical-tab">
+              <button
+                class="tablinks"
+                onclick="openSport(event, 'football')"
+                id="defaultOpen"
+              >
+                01
+              </button>
+              <button class="tablinks" onclick="openSport(event, 'basket')">
+                02
+              </button>
+              <button class="tablinks" onclick="openSport(event, 'volley')">
+                03
+              </button>
+            </div>
+
+            <div id="football" class="tabcontent">
+              <div class="hero-title">
+                <div class="side"><span></span> О НАС</div>
+                <h2>в онлайн бизнесе вы чувствуете нехватку?</h2>
+                <p>
+                  WebPark - это агентство по разработке сайтов любой сложности и
+                  комплексному SMM продвижению в социальных сетях. Наши
+                  специалисты имеют успешные кейсы как с местными, так и с
+                  зарубежными брендами.
+                </p>
+                <div class="hero-title-btm">
+                  <h5>следите нами в социальных сетях</h5>
+                  <div class="social-title">
+                    <a href="tg.com"
+                      ><img src="./img//tele2.svg" alt="" />Telegram</a
+                    >
+                    <a href="instagram.com"
+                      ><img src="./img/insta2.svg" alt="" />Instagram</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <img src="./img/tab1.png" alt="" />
+            </div>
+
+            <div id="basket" class="tabcontent">
+              <div class="hero-title">
+                <div class="side"><span></span> О НАС</div>
+                <h2>в онлайн бизнесе вы чувствуете нехватку?</h2>
+                <p>
+                  WebPark - это агентство по разработке сайтов любой сложности и
+                  комплексному SMM продвижению в социальных сетях. Наши
+                  специалисты имеют успешные кейсы как с местными, так и с
+                  зарубежными брендами.
+                </p>
+                <div class="hero-title-btm">
+                  <h5>следите нами в социальных сетях</h5>
+                  <div class="social-title">
+                    <a href="tg.com"
+                      ><img src="./img//tele2.svg" alt="" />Telegram</a
+                    >
+                    <a href="instagram.com"
+                      ><img src="./img/insta2.svg" alt="" />Instagram</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <img src="./img/tab1.png" alt="" />
+            </div>
+
+            <div id="volley" class="tabcontent">
+              <div class="hero-title">
+                <div class="side"><span></span> О НАС</div>
+                <h2>в онлайн бизнесе вы чувствуете нехватку?</h2>
+                <p>
+                  WebPark - это агентство по разработке сайтов любой сложности и
+                  комплексному SMM продвижению в социальных сетях. Наши
+                  специалисты имеют успешные кейсы как с местными, так и с
+                  зарубежными брендами.
+                </p>
+                <div class="hero-title-btm">
+                  <h5>следите нами в социальных сетях</h5>
+                  <div class="social-title">
+                    <a href="tg.com"
+                      ><img src="./img//tele2.svg" alt="" />Telegram</a
+                    >
+                    <a href="instagram.com"
+                      ><img src="./img/insta2.svg" alt="" />Instagram</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <img src="./img/tab1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="logo"><img src="./img/logo.png" alt="" /></div>
+          <div class="nav-footer">
+            <ul>
+              <li>
+                Привлечение клиентов в ваш <br />
+                бизнес расширьте возможности.
+              </li>
+              <li>
+                <div class="social-title">
+                  <a href="tg.com"
+                    ><img src="./img//tele2.svg" alt="" />Telegram</a
+                  >
+                  <a href="instagram.com"
+                    ><img src="./img/insta2.svg" alt="" />Instagram</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="./img/sms.png" alt="" />
+                info@data.uz
+              </li>
+              <li>
+                <img src="./img/call.png" alt="" />
+                +998 90 010-85-10
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="./img/webIcon.png" alt="" />
+                www.data.uz
+              </li>
+              <li>
+                <img src="./img/address.png" alt="" />
+                Address, Home
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="/jQuery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
+</html>
