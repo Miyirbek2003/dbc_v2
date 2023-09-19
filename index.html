@@ -98,6 +98,53 @@
     </header>
     <main>
       <section id="main" data-aos="fade-up">
+        <div class="shape1">
+          <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="b">
+                <path
+                  fill="currentColor"
+                  d="M837.5 639q45.5 139-72 228T510 925.5q-138-30.5-257-95T93.5 633Q53 500 77 355t158-202q134-57 263.5-52.5t192 110Q753 316 772.5 408t65 231Z"
+                />
+              </clipPath>
+              <filter id="a" x="-50vw" y="-50vh" width="100vw" height="100vh">
+                <feFlood flood-color="#fff" result="neutral-gray" />
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="2.5"
+                  numOctaves="100"
+                  stitchTiles="stitch"
+                  result="noise"
+                />
+                <feColorMatrix
+                  in="noise"
+                  type="saturate"
+                  values="0"
+                  result="destaturatedNoise"
+                />
+                <feComponentTransfer in="desaturatedNoise" result="theNoise">
+                  <feFuncA type="table" tableValues="0 0 0.35 0" />
+                </feComponentTransfer>
+                <feBlend
+                  in="SourceGraphic"
+                  in2="theNoise"
+                  mode="soft-light"
+                  result="noisy-image"
+                />
+              </filter>
+            </defs>
+            <path fill="#F7F7F7">
+              <animate
+                attributeName="d"
+                dur="2000ms"
+                repeatCount="indefinite"
+                values="M854 633.5Q767 767 633.5 807t-307 40q-173.5 0-166-173.5t4-343q-3.5-169.5 166-208t285 54Q731 269 836 384.5t18 249Z; 
+                M830.5 642.5Q785 785 642.5 892t-269-16Q247 753 147.5 626.5t-26-279q73.5-152.5 226-173T612 215q112 61 188 173t30.5 254.5Z;
+                M854 633.5Q767 767 633.5 807t-307 40q-173.5 0-166-173.5t4-343q-3.5-169.5 166-208t285 54Q731 269 836 384.5t18 249Z"
+              ></animate>
+            </path>
+          </svg>
+        </div>
         <div class="container">
           <div class="main-inner">
             <div class="main-title">

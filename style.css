@@ -168,13 +168,31 @@ header ul li a.active::after {
 
 main>#main {
     height: 100vh;
-    background-image: url('./img/mask.png');
-    background-size: cover;
+    background-image: url('./img/hero.png');
+    background-size: 50%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     display: flex;
     align-items: center;
+    overflow: auto;
 
+}
+
+#main::after {
+    content: "";
+    background-image: url('./img/rec.png');
+    width: 50%;
+    height: 100%;
+    z-index: -10;
+}
+
+
+.shape1 {
+    position: absolute;
+    left: -300px;
+    z-index: -5;
+    width: 600px;
+    top: 5px;
 }
 
 .main-inner {
@@ -191,7 +209,7 @@ main>#main {
 }
 
 .main-title h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
 }
 
