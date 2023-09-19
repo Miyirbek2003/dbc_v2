@@ -3,6 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 
+
+@font-face {
+    font-family: 'Neue Machine';
+    src: url('neue/NeueMachina-Regular.otf');
+}
+
+
 /* font-family: 'Comic Neue', cursive; */
 *,
 *::after,
@@ -14,6 +21,21 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+}
+
+h1,
+.hero-title h2,
+.prices-title h2,
+.prices-card h2,
+.feedback-title h2,
+h5 {
+    font-family: 'Neue Machine';
+    text-transform: uppercase;
+}
+
+.prices-card h2 {
+    color: #4A4856 !important;
+    white-space: nowrap;
 }
 
 body {
@@ -51,6 +73,22 @@ img {
 a {
     font-family: 'Inter', sans-serif;
 }
+
+.btm-line {
+    position: relative;
+}
+
+.btm-line::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    z-index: -2;
+    background-color: #00B6B9;
+}
+
 
 /* HEADER */
 .logo img {
@@ -924,7 +962,20 @@ footer {
     font-size: 25px;
 }
 
-.slick-next,
+.slick-next {
+    box-shadow: 20px 20px 40px 0px #9696961A;
+}
+
+.feed-item>div {
+    padding: 10px;
+}
+
+@media screen and (max-width:1122px) {
+    .prices-card>div h2 {
+        font-size: 35px;
+    }
+}
+
 .slick-prev {
     font-size: 25px !important;
     color: #4A4856 !important;
@@ -937,11 +988,6 @@ footer {
 
 .feed-item {
     padding: 15px;
-    box-shadow: 20px 20px 40px 0px #9696961A;
-}
-
-.feed-item>div {
-    padding: 10px;
 }
 
 @media screen and (max-width:1144px) {
@@ -977,9 +1023,49 @@ footer {
 
 }
 
+@media screen and (max-width:939px) {
+    .prices-title p {
+        line-height: 22px;
+    }
+
+    .prices-card {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .prices-card>div {
+        width: 100%;
+    }
+
+    .prices-card>div h2 {
+        margin: 15px 0;
+    }
+
+    .prices-title h2 {
+        font-size: 30px;
+    }
+
+    .prices-card>div h2 {
+        margin: 10px 0;
+    }
+}
+
+.feed-item>div {
+    padding: 10px;
+}
+
+.slick-next {
+    font-size: 25px !important;
+    color: #4A4856 !important;
+}
+
 @media screen and (max-width:832px) {
     .mySwiper {
         width: 100%;
+    }
+
+    .feed-item p {
+        font-size: 15px;
     }
 
     .main-inner {
@@ -1005,26 +1091,7 @@ footer {
         width: 72%;
     }
 
-    .prices-title p {
-        line-height: 22px;
-    }
 
-    .prices-card {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .prices-card>div {
-        width: 100%;
-    }
-
-    .prices-card>div h2 {
-        margin: 15px 0;
-    }
-
-    .prices-title h2 {
-        font-size: 30px;
-    }
 
     /* 
     .feedback swiper-slide {
