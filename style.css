@@ -33,6 +33,12 @@ h5 {
     text-transform: uppercase;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
+
 .prices-card h2 {
     color: #4A4856 !important;
     white-space: nowrap;
@@ -41,7 +47,7 @@ h5 {
 body {
     min-width: 340px;
     font-family: 'Inter', sans-serif;
-
+    overflow-x: hidden;
 }
 
 button {
@@ -174,7 +180,6 @@ main>#main {
     background-position: right;
     display: flex;
     align-items: center;
-    overflow: auto;
 
 }
 
@@ -184,6 +189,8 @@ main>#main {
     width: 50%;
     height: 100%;
     z-index: -10;
+    position: absolute;
+    right: 0;
 }
 
 
@@ -1237,6 +1244,19 @@ footer {
     }
 }
 
+@media screen and (max-width:590px) {
+    #main {
+        background: none !important;
+    }
+
+    #main::after {
+        content: none;
+        background: none !important;
+    }
+    .main-title h1{
+        font-size: 30px;
+    }
+}
 
 @media screen and (max-width:529px) {
     .services-card {
@@ -1294,6 +1314,12 @@ footer {
 
 @media screen and (max-width:464px) {
     .shape3 {
-        left: 30%;
+        left: 31%;
+        max-width: 250px;
+        top: 65%;
+    }
+
+    .side{
+        left: 69%;
     }
 }
