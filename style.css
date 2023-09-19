@@ -1267,6 +1267,13 @@ footer {
     }
 }
 
+.shape3 {
+    max-width: 300px;
+    width: 100%;
+    left: 35%;
+    top: 60%;
+}
+
 @media screen and (max-width:464px) {
     .shape3 {
         left: 30%;
