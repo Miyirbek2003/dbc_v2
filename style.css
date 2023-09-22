@@ -1100,7 +1100,9 @@ footer {
     .about-inner {
         flex-direction: column-reverse;
     }
-
+    .about-inner .hero-22{
+        display: none;
+    }
     .main-title h1 {
         font-size: 35px;
         line-height: 40px;
