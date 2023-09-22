@@ -673,9 +673,16 @@ main>.projects {
     margin-bottom: 150px;
 }
 
+.vertical-tab button,
+.vertical-tab button.active {
+    font-family: 'Neue Machine' !important;
+}
+
 .tablinks {
     overflow: hidden;
     font-weight: bold;
+    font-family: 'Neue Machine';
+
 }
 
 .vertical-tab {
@@ -701,6 +708,12 @@ main>.projects {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.feed-item{
+    cursor: grab;
+}
+.feed-item p {
+    color: #AEB2B1;
+}
 
 footer {
     margin-top: 70px;
@@ -709,7 +722,7 @@ footer {
 
 .vertical-tab button.active {
     background: -webkit-linear-gradient(#00B6B9, #0F0F3E);
-    font-size: 25px;
+    font-size: 27px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -982,6 +995,11 @@ footer {
     right: 0 !important;
 }
 
+.feed-item {
+    box-shadow: 20px 20px 40px 0px #9696961A;
+
+}
+
 .slick-arrow {
     opacity: 1;
     font-size: 25px;
@@ -1100,9 +1118,11 @@ footer {
     .about-inner {
         flex-direction: column-reverse;
     }
-    .about-inner .hero-22{
+
+    .about-inner .hero-22 {
         display: none;
     }
+
     .main-title h1 {
         font-size: 35px;
         line-height: 40px;
@@ -1149,6 +1169,10 @@ footer {
 
     .tab .side {
         display: none;
+    }
+
+    .tablinks {
+        font-family: ;
     }
 
     .tab img {
