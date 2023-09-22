@@ -1253,7 +1253,8 @@ footer {
         content: none;
         background: none !important;
     }
-    .main-title h1{
+
+    .main-title h1 {
         font-size: 30px;
     }
 }
@@ -1305,6 +1306,18 @@ footer {
     }
 }
 
+.hero-22 {
+    position: relative;
+}
+
+.shape4 {
+    position: absolute;
+    width: 600px;
+    left: -100px;
+    z-index: -5;
+
+}
+
 .shape3 {
     max-width: 300px;
     width: 100%;
@@ -1319,7 +1332,7 @@ footer {
         top: 65%;
     }
 
-    .side{
+    .side {
         left: 69%;
     }
 }
